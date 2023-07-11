@@ -1,21 +1,26 @@
 /* HEADER */
 .home-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: solid 1px silver;
-    padding: 30px 10px;
+    padding: 30px 10px 15px;
+}
+
+.hamburger-button {
+    width: 500px;
+    margin-right: 25px;
 }
 
 /* ASIDE */
 .home-aside {
-    padding: 30px 10px 0 10px;
-}
-
-.home-aside nav ul li {
-    line-height: 25px;
+    display: none;
 }
 
 /* MAIN */
 .home-main {
-    padding: 30px 10px; 
+    padding: 30px 10px;
 }
 
 .home-main h3 {
@@ -23,7 +28,7 @@
 }
 
 .home-main-section-top {
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     display: inline-block;
     font-weight: 700;
 }
@@ -41,9 +46,15 @@
 .home-footer {
     background-color: gainsboro;
     padding: 10px;
-    float: left;
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-footer-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .home-footer-logo {
@@ -51,14 +62,12 @@
 }
 
 .home-footer img {
-    float: left;
     width: 150px;
 }
 
 .home-footer-nav {
     width: 50%;
-    float: left;
-    text-align: right;
+    text-align: end;
 }
 
 .home-footer-nav a {
